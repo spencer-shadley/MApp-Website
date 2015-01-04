@@ -1,0 +1,48 @@
+html { 
+	width: 100%;
+	height: 100%;
+	background-color: blue; 
+}
+
+.content {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: blue; 
+}
+
+/* Title of Page */
+#unit_header {
+	color: cyan; 
+	font-size: 50px;
+}
+
+.unit_card {
+	background-color: green;
+	margin-bottom: 20px;
+	padding: 2px 0px;
+	font-size: 25px;
+	transition: width 400ms, background-color 400ms ease;
+	line-height: .2;
+}
+
+.unit_card:hover {
+	background-color: yellow;
+	width: 95%;
+}
+
+.unit_card:active {
+	transition: background-color 0s ease;
+	background-color: red;
+}
+
+/* Unit Titles */
+div h2 {
+	 
+}
+
+/* Unit Descriptions */
+div p {
+	font-style: italic;
+}
