@@ -1,7 +1,6 @@
-html { 
-	width: 100%;
-	height: 100%;
-	background-color: blue; 
+html {
+	background-image: url("../res/android.png");
+	background-color: blue;
 }
 
 .content {
@@ -9,13 +8,21 @@ html {
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	background-color: blue; 
 }
 
-/* Title of Page */
+.link-spanner {
+  position:absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}   
+
 #unit_header {
 	color: cyan; 
-	font-size: 50px;
+	font-size: 4.5em;
+	text-transform: uppercase;
 }
 
 .unit_card {
@@ -24,12 +31,15 @@ html {
 	padding: 2px 0px;
 	font-size: 25px;
 	transition: width 400ms, background-color 400ms ease;
-	line-height: .2;
+	margin-top: 0px;
+	line-height: 2;
+	color: black;
+	position: relative;
 }
 
 .unit_card:hover {
 	background-color: yellow;
-	width: 95%;
+	width: 90%;
 }
 
 .unit_card:active {
@@ -39,10 +49,21 @@ html {
 
 /* Unit Titles */
 div h2 {
-	 
+	font-size: 2em;
+	font-family: Verdana, Geneva, sans-serif;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px #fff;
+	word-spacing: 3px;
 }
 
 /* Unit Descriptions */
 div p {
 	font-style: italic;
+	font-size: 1em;
+	font-family: Geneva, sans-serif, Verdana;
+	text-shadow: .1px .1px #fff;
+}
+
+#unit_card_container {
+	position: absolute;
 }
