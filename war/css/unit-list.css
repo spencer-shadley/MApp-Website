@@ -20,34 +20,43 @@ html {
   top: 0;
   left: 0;
   z-index: 1;
-}   
+}
 
 #unit_header {
-	color: cyan; 
+	color: #c294ff; 
 	font-size: 4.5em;
+	font-weight: 900;
+	transition: text-shadow .5s linear;
 	text-transform: uppercase;
+	text-shadow: 0px 0px 24px #5200bd;
+}
+
+#unit_header:hover {
+	text-shadow: 0px 0px 15px #5200bd;
 }
 
 .unit_card {
-	background-color: green;
-	margin-bottom: 20px;
-	padding: 2px 0px;
+	/* Gray>Blue: 2b739c 0098f0 */
+	/* Inviting Blue>Yellow: 0098f0 f9e353 */
+	/* Inviting BLue>Green: 0098f0 0cc04e */
+	background-color: #0098f0;
 	font-size: 25px;
-	transition: width 400ms, background-color 400ms ease;
-	margin-top: 0px;
 	line-height: 2;
-	color: black;
+	padding: 2px 0px;
+	margin-bottom: 20px;
+	margin-top: 0px;
 	position: relative;
+	transition: width 400ms, background-color 400ms ease;
 }
 
 .unit_card:hover {
-	background-color: yellow;
+	background-color: #2057ff;
 	width: 90%;
 }
 
 .unit_card:active {
 	transition: background-color 0s ease;
-	background-color: red;
+	background-color: #004a75;
 }
 
 /* Unit Titles */
@@ -55,8 +64,11 @@ div h2 {
 	font-size: 2em;
 	font-family: Verdana, Geneva, sans-serif;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px #fff;
-	word-spacing: 3px;
+	color: #0f5680;
+	text-shadow: 0px 0px 10px #76c3ef;
+	font-weight: bold;
+/* 	color: #76c3ef;
+	text-shadow: 0px 0px 4px #0d4d72; */
 }
 
 /* Unit Descriptions */
@@ -64,7 +76,10 @@ div p {
 	font-style: italic;
 	font-size: 1em;
 	font-family: Geneva, sans-serif, Verdana;
-	text-shadow: .1px .1px #fff;
+	/*color: #76c3ef;
+	text-shadow: 0px 0px 0px #1472a9;*/
+	color: #0f5680;
+	text-shadow: 0px 0px 4px #fff;
 }
 
 #unit_card_container {
