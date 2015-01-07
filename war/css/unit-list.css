@@ -1,5 +1,5 @@
 html {
-	background: url("../res/iwall_blue.jpg") no-repeat center center fixed; 
+	background: blue url("../res/iwall_blue.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
