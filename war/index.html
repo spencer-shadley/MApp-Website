@@ -2,11 +2,75 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>MApp</title>
+<title>Units</title>
+
+<!-- jQuery (pulled from Google) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="css/unit-list.css" type="text/css"/>
+<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+<!-- load the header -->
+<script> 
+	$(function(){
+		$("#header").load("html/header.html");
+	});
+</script>
+
 </head>
 <body>
 
-<a href="html/unit-list.html">See the Units</a>
+<div id="header"></div>
+
+
+
+
+<div id="unit_card_container" class="content">
+	<h1 id="unit_header" class="center">Index Tutorials for Developing MApps</h1>
+
+	<!-- Unit Card 1 -->
+	<div class="unit_card center">
+		<a href="html/tutorial-intro.html"> <span class="link-spanner"></span> </a> <!-- Tricky way to make div clickable -->
+		<h2 class="unit_title">Unit 1</h2>
+		<p class="unit_desc">Introduction to Android</p>
+	</div>
+	
+	<!-- Unit Card 2 -->
+	<div class="unit_card center">
+		<a href="tutorial-create-app.html"> <span class="link-spanner"></span> </a> <!-- Tricky way to make div clickable -->
+		<h2 class="html/unit_title">Unit 2</h2>
+		<p class="unit_desc">Creating your First App</p>
+	</div>
+	
+	<!-- Unit Card 3 -->
+	<div class="unit_card center">
+		<a href="tutorial-widgets.html"> <span class="link-spanner"></span> </a> <!-- Tricky way to make div clickable -->
+		<h2 class="html/unit_title">Unit 3</h2>
+		<p class="unit_desc">More about Widgets</p>
+	</div>
+	
+	<!-- Unit Card 4 -->
+	<div class="unit_card center">
+		<a href="tutorial-organize.html"> <span class="link-spanner"></span> </a> <!-- Tricky way to make div clickable -->
+		<h2 class="html/unit_title">Unit 4</h2>
+		<p class="unit_desc">Organizing it all Together</p>
+	</div>
+	
+	<!-- Unit Card 5 -->
+	<div class="unit_card center">
+		<a href="tutorial-projects.html"> <span class="link-spanner"></span> </a> <!-- Tricky way to make div clickable -->
+		<h2 class="html/unit_title">Unit 5</h2>
+		<p class="unit_desc">Final Projects</p>
+	</div>
+	
+	<!-- Unit Card 6 -->
+	<div class="unit_card center">
+		<a href="tutorial-publish.html"> <span class="link-spanner"></span> </a> <!-- Tricky way to make div clickable -->
+		<h2 class="html/unit_title">Unit 6</h2>
+		<p class="unit_desc">Publish</p>
+	</div>
+</div>
 
 </body>
 </html>

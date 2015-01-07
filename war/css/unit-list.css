@@ -1,3 +1,18 @@
+#container {
+      width: 200px;
+      height: 200px;
+      overflow: hidden; /*important*/
+}
+#container img{
+    position: relative; /*important*/
+}
+
+
+
+
+
+
+
 html {
 	background: url("../res/iwall_blue.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -31,10 +46,6 @@ html {
 	text-shadow: 0px 0px 24px #5200bd;
 }
 
-#unit_header:hover {
-	text-shadow: 0px 0px 15px #5200bd;
-}
-
 .unit_card {
 	/* Gray>Blue: 2b739c 0098f0 */
 	/* Inviting Blue>Yellow: 0098f0 f9e353 */
@@ -59,27 +70,31 @@ html {
 	background-color: #004a75;
 }
 
-/* Unit Titles */
-div h2 {
+.unit_card:hover .unit_desc, .unit_card:hover .unit_title {
+	color: #fff;
+	text-shadow: 0px 0px 5px #76c3ef;
+}
+
+.unit_title, .unit_desc {
+	transition: color 400ms ease-out;
+}
+
+.unit_title {
 	font-size: 2em;
 	font-family: Verdana, Geneva, sans-serif;
 	letter-spacing: 1px;
 	color: #0f5680;
 	text-shadow: 0px 0px 10px #76c3ef;
 	font-weight: bold;
-/* 	color: #76c3ef;
-	text-shadow: 0px 0px 4px #0d4d72; */
 }
 
-/* Unit Descriptions */
-div p {
+.unit_desc {
 	font-style: italic;
 	font-size: 1em;
 	font-family: Geneva, sans-serif, Verdana;
-	/*color: #76c3ef;
-	text-shadow: 0px 0px 0px #1472a9;*/
 	color: #0f5680;
 	text-shadow: 0px 0px 4px #fff;
+	font-weight: bold;
 }
 
 #unit_card_container {
