@@ -1,5 +1,5 @@
 html {
-	background: blue url("../res/iwall_blue.jpg") no-repeat center center fixed; 
+	background: black url("../res/iwall_blue.jpg") no-repeat center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -26,9 +26,16 @@ html {
 	color: #c294ff; 
 	font-size: 4.5em;
 	font-weight: 900;
+	margin-bottom: 10px;
 	transition: text-shadow .5s linear;
 	text-transform: uppercase;
 	text-shadow: 0px 0px 24px #5200bd;
+}
+
+#unit_header::selection {
+	background: red;
+	color: yellow;
+	text-shadow: 0px 0px;
 }
 
 .unit_card {
@@ -68,7 +75,7 @@ html {
 	font-size: 2em;
 	font-family: Verdana, Geneva, sans-serif;
 	letter-spacing: 1px;
-	color: #0f5680;
+	color: #0a3b57;
 	text-shadow: 0px 0px 10px #76c3ef;
 	font-weight: bold;
 }
@@ -77,8 +84,8 @@ html {
 	font-style: italic;
 	font-size: 1em;
 	font-family: Geneva, sans-serif, Verdana;
-	color: #0f5680;
-	text-shadow: 0px 0px 4px #fff;
+	color: #0b4160;
+	text-shadow: 0px 0px 2px #fff;
 	font-weight: bold;
 }
 
