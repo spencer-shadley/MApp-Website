@@ -5,3 +5,9 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+iframe {
+	allowfullscreen: true;
+	mozallowfullscreen: true;
+	webkitallowfullscreen: true;
+}
