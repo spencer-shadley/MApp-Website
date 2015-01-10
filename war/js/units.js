@@ -1,16 +1,17 @@
+/** iFrame Setup **/
 // set default heights and widths for iframes
 var default_width = 960;
 var default_height = 749;
 var default_doc_height = 300;
 var default_ratio = default_width / default_height;
 
-// Adjust iframe width on load
+// Adjust iframe dimensions on load
 $(document).ready(function() {
 	$("#header").load("../header.html"); 	// load the header
 	resizeFrames();							// initial iframe sizing
 });
 
-//Adjust iframe width on resize
+//Adjust iframe dimensions on resize
 $(window).resize(function() {
 	resizeFrames();
 });
@@ -18,7 +19,7 @@ $(window).resize(function() {
 // update iframe width and height
 function resizeFrames() {
 	
-	var iframe_ratio = default_width / default_height;		// needed to calculate an updated height
+	var iframe_ratio = default_width / default_height;		// need to calculate an updated height
 	var win_width = $(window).width();
 	var iframes = document.getElementsByTagName("iframe");
 	
@@ -60,23 +61,54 @@ function resizeFrames() {
 	}
 }
 
+/** Handle Button Clicks **/
+var bclicked = "Reload";
+var bunclicked = "View Details";
+var ow_header = "Overview";
+var gs_header = "Getting Started";
+var qz_header = "Quizzes";
 
+// Redirect with correct handler argument
+function open_intro_ow() { open_intro_handler("ow"); }
+function open_intro_gs() { open_intro_handler("gs"); }
+function open_intro_quizzes() { open_intro_handler("qz"); }
 
-  
- 
+// Handle all requests to load new Intro Pages
+function open_intro_handler(page) {
 
-
-function open_intro_ow() {
-	 $("#content").load("../html/tutorial-intro-ow.html");
+	// load the new section
+	$("#content").load("../html/tutorial-intro-"+ page + ".html");
+	
+	 // update frame sizes
 	 resizeFrames();
-}
+	
+	 // update buttons' text
+	 document.getElementById("t-intro-ow-bt").innerHTML = bunclicked;
+	 document.getElementById("t-intro-gs-bt").innerHTML = bunclicked;
+	 document.getElementById("t-intro-qz-bt").innerHTML = bunclicked;
+	 document.getElementById("t-intro-"+page+"-bt").innerHTML = bclicked;
 
-function open_intro_gs() {
-	 $("#content").load("../html/tutorial-intro-gs.html");
-	 resizeFrames();
-}
-
-function open_intro_quizzes() {
-	 $("#content").load("../html/tutorial-intro-quizzes.html");
-	 resizeFrames();
+	 // update headers' text
+	 document.getElementById("t-intro-ow-h").innerHTML = ow_header;
+	 document.getElementById("t-intro-gs-h").innerHTML = gs_header;
+	 document.getElementById("t-intro-qz-h").innerHTML = qz_header;
+	 
+	 // scroll to top of page
+	 document.body.scrollTop = document.documentElement.scrollTop = 0;
+	
+	// update headers' text
+	switch(page) {
+		case "ow": 
+			document.getElementById("t-intro-ow-h").innerHTML = "<u>" + ow_header + "</u>";
+			break;
+		case "gs": 
+			document.getElementById("t-intro-gs-h").innerHTML = "<u>" + gs_header + "</u>";
+			break;
+		case "qz": 
+			document.getElementById("t-intro-qz-h").innerHTML = "<u>" + qz_header + "</u>";
+			break;
+		default:
+			alert("Unfortunately, something went wrong processing your page request. Please try again");
+			break;
+	}
 }
