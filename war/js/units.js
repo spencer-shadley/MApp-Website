@@ -4,12 +4,10 @@ var default_height = 749;
 var default_doc_height = 300;
 var default_ratio = default_width / default_height;
 
-// Load the header
-$(function() { $("#header").load("../header.html"); });
-
 // Adjust iframe width on load
 $(document).ready(function() {
-	resizeFrames();
+	$("#header").load("../header.html"); 	// load the header
+	resizeFrames();							// initial iframe sizing
 });
 
 //Adjust iframe width on resize
@@ -60,4 +58,25 @@ function resizeFrames() {
 			}
 		}
 	}
+}
+
+
+
+  
+ 
+
+
+function open_intro_ow() {
+	 $("#content").load("../html/tutorial-intro-ow.html");
+	 resizeFrames();
+}
+
+function open_intro_gs() {
+	 $("#content").load("../html/tutorial-intro-gs.html");
+	 resizeFrames();
+}
+
+function open_intro_quizzes() {
+	 $("#content").load("../html/tutorial-intro-quizzes.html");
+	 resizeFrames();
 }
