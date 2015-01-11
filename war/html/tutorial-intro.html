@@ -20,146 +20,66 @@
 <div id="header"></div>
 
 
+<div id="content" class="center">
 
 <!-- Top Explanation -->
 <div id="top_exp">
-<h1>Unit 1</h1>
-<h2>Introduction to Android</h2>
+<h1 id="unit_title"><u>Unit 1</u></h1>
+<h2 id="unit_descript">Introduction to Android</h2>
 
-<h3>It is recommended to install <a target="_blank" href="https://play.google.com/store/apps/details?id=com.feztheforeigner.mobileapps">this</a> supplemental application before beginning</h3>
+<h3 id="recommendation">It is recommended to install <a class="link" target="_blank" href="https://play.google.com/store/apps/details?id=com.feztheforeigner.mobileapps">this</a> supplemental application and taking a look at <a class="link" href="https://docs.google.com/document/d/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE/pub">this</a> document of helpful resources before beginning</h3>
 
-<a href="https://docs.google.com/document/d/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE/pub">Recommended resource to setup development environment<br/></a>
 </div>
 
+<hr></hr>
+<!-- Initially load Overview -->
+
+<!-- Section Talk -->
+<h1 id="section_title"><u>Overview</u></h1>
+<p id="section_description">In this section you will learn about terms used in Android development, each Android version, custom versions of Android (skins) and a little about competing mobile platforms.</p>
 
 
-
-
-
-<!-- Overview -->
-<div id="content">
-
-<h1>Tutorial Intro Overview</h1>
-
-<!-- Introduction to Mobile Technology and Applications -->
-<a href="https://docs.google.com/document/d/1lpwUEflBOSXauZuPV_hi8_LyB1ercV06SVS9b6NSoH4/pub" target="_blank">(Open Introduction to Mobile Technology and Applications in a new tab)<br/></a>
-<iframe class="doc" src="https://docs.google.com/document/d/1lpwUEflBOSXauZuPV_hi8_LyB1ercV06SVS9b6NSoH4/pub?embedded=true" frameborder="0"></iframe>
 
 <!-- Android Terminology -->
-<h3>Android Terminology</h3>
+<h3 class="frame_title">Android Terminology</h3>
 <iframe class="slidedeck" src="https://docs.google.com/presentation/d/1XhsIcV0mpGXRTycaFzhgFNcQtHqpdtWlqU-n00VmPcE/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
 
 <!-- Android Versions -->
-<h3>Android Versions</h3>
+<h3 class="frame_title">Android Versions</h3>
 <iframe class="slidedeck" src="https://docs.google.com/presentation/d/11sfleClVTE7wDmtenDsN9cO44PBDlRCoSurdZPiY3ao/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
 
 <!-- Custom OEM Skins -->
-<h3>Custom OEM Skins</h3>
+<h3 class="frame_title">Custom OEM Skins</h3>
 <iframe class="slidedeck" src="https://docs.google.com/presentation/d/1xjoFTC_SZHZjSEm47xpvz8CNzsks3AB5ln9Re3LyIOE/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
 
 <!-- Overview of Mobile Operating Systems -->
-<h3>Overview of Mobile Operating Systems</h3>
+<h3 class="frame_title">Overview of Mobile Operating Systems</h3>
 <iframe class="slidedeck" src="https://docs.google.com/presentation/d/1DPaJ101iHZ13T-45rOBpwGR_2hGx2K_W1Cgc4kWRKd8/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
 
+</div> <!-- content -->
+ 
+ 
+<!-- Three columns of text below the carousel -->
+<div id="bottom_row" class="row center">
+  <div id="bottom_col_ow" class="col-lg-4 bottom_col_div" onclick="open_intro_ow()">
+    <img class="img-circle" src="../res/overview.png" alt="overview" style="width: 140px; height: 140px;">
+    <h2 id="t-intro-ow-h"><u>Overview</u></h2>
+    <p>Learn how to setup your Android development environment, Android terminology, Android versions, custom OEM skins and the different types of mobile Operating Systems.</p>
+    <button id="t-intro-ow-bt" class="bottom_btn">Reload</button>
+  </div>
+  <div id="bottom_col_gs" class="col-lg-4 bottom_col_div" onclick="open_intro_gs()">
+    <img class="img-circle" src="../res/start.png" alt="getting started" style="width: 140px; height: 140px;">
+    <h2 id="t-intro-gs-h">Getting Started</h2>
+    <p>Discover the difference between density-independent pixels and pixels, how to store global variables/resources and different representations of width and height in your layouts.</p>
+    <button id="t-intro-gs-bt" class="bottom_btn">View Details</button>
+  </div>
+  <div id="bottom_col_qz" onclick="open_intro_quizzes()" class="col-lg-4 bottom_col_div">
+    <img class="img-circle" src="../res/quiz.png" alt="quiz" style="width: 140px; height: 140px;">
+    <h2 id="t-intro-qz-h">Quizzes</h2>
+    <p>For the adventurous quizzes are provided to test your knowledge in Android terminology, Android versions and how density-indpendent pixels differ from plain old pixels.</p>
+  	<button id="t-intro-qz-bt" class="bottom_btn">View Details</button>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-<!-- Getting Started
-<h1><br/>break<br/><br/></h1>
-
-<h3>DP vs PX | Values and Drawables</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1c5RtkcozM6gjy9g_0kKetuL2kCcC2k01tS__qKfj9-k/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
-<h3>Layout Width and Height</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1aiZdQeORS_tvkeUCVBf_j2he4jlOSeuZQSd93sKnfw4/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
-<h3>Android Layouts</h3>
-<iframe src="https://docs.google.com/presentation/d/193pp-FUuCbGPGtD8zPsxwKO4_QvuJI4V5THnpp7XQzg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<h3>Using and Calling Drawables and Values</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1eHDPJ5V1BYJt5XsqguVpGSABYL_efyhmLv8Z9mz2VpQ/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
- -->
-
- 
- 
- 
- 
- 
- 
- 
-
-
-<!-- Quizzes
-<h1><br/>break<br/><br/></h1>
- 
-<h2>Quizzes!</h2>
-
-<h3>Android Terminology Quiz</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1r6pryQec1oSgy6tyiMeTEJaositzGNFlW_ThcKh2mqw/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
-<h3>Android Versions Quiz</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1u5BQgGhZNlltnSxrkR_54T8L_y7w6k6Scb-fAMToU4o/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
-<h3>Difference Between DP and PX Quiz</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1FsngA_z9Bo2jjbfFsAYCtL-lQRsnATkJLLkttFat8W0/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
--->
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- <!-- Three columns of text below the carousel -->
- <div class="row center">
-   <div class="col-lg-4">
-     <img class="img-circle" src="../res/overview.png" alt="overview" style="width: 140px; height: 140px;">
-     <h2 id="t-intro-ow-h"><u>Overview</u></h2>
-     <p>Learn how to setup your Android development environment, Android terminology, Android versions, custom OEM skins and the different types of mobile Operating Systems.</p>
-     <button id="t-intro-ow-bt" class="btn btn-default" onclick="open_intro_ow()">Reload</button>
-   </div><!-- /.col-lg-4 -->
-   <div class="col-lg-4">
-     <img class="img-circle" src="../res/start.png" alt="getting started" style="width: 140px; height: 140px;">
-     <h2 id="t-intro-gs-h">Getting Started</h2>
-     <p>Discover the difference between density-independent pixels and pixels, how to store global variables/resources and different representations of width and height in your layouts.</p>
-     <button id="t-intro-gs-bt" class="btn btn-default" onclick="open_intro_gs()">View Details</button>
-   </div><!-- /.col-lg-4 -->
-   <div class="col-lg-4">
-     <img class="img-circle" src="../res/quiz.png" alt="quiz" style="width: 140px; height: 140px;">
-     <h2 id="t-intro-qz-h">Quizzes</h2>
-     <p>For the adventerous quizzes are provided to test your knowledge in Android terminology, Android versions and how density-indpendent pixels differ from plain old pixels.</p>
-   	 <button id="t-intro-qz-bt" class="btn btn-default" onclick="open_intro_quizzes()">View Details</button>
-   </div><!-- /.col-lg-4 -->
- </div><!-- /.row -->
- 
- 
- <!-- Icons made in part by
- <div>Icons made by <a href="http://www.danielbruce.se" title="Daniel Bruce">Daniel Bruce</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
- 
- 
- -->
- 
- 
- 
- 
- 
- 
- 
- 
  
 </body>
 </html>
