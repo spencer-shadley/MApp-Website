@@ -63,7 +63,7 @@ function resizeFrames() {
 
 /** Handle Button Clicks **/
 var bclicked = "Reload";
-var bunclicked = "View Details";
+var bunclicked = "Begin";
 var ow_header = "Overview";
 var gs_header = "Getting Started";
 var qz_header = "Quizzes";
