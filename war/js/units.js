@@ -61,18 +61,6 @@ function resizeFrames() {
 	}
 }
 
-/** Handle Button Clicks **/
-var bclicked = "Reload";
-var bunclicked = "Begin";
-var ow_header = "Overview";
-var gs_header = "Getting Started";
-var qz_header = "Quizzes";
-
-// Redirect with correct handler argument
-function open_intro_ow() { open_intro_handler("ow"); }
-function open_intro_gs() { open_intro_handler("gs"); }
-function open_intro_quizzes() { open_intro_handler("qz"); }
-
 // Handle all requests to load new Intro Pages
 function open_intro_handler(page) {
 
@@ -92,9 +80,6 @@ function open_intro_handler(page) {
 	 document.getElementById("t-intro-ow-h").innerHTML = ow_header;
 	 document.getElementById("t-intro-gs-h").innerHTML = gs_header;
 	 document.getElementById("t-intro-qz-h").innerHTML = qz_header;
-	 
-	 // scroll to top of page
-	 document.body.scrollTop = document.documentElement.scrollTop = 0;
 	
 	// update headers' text
 	switch(page) {
@@ -111,4 +96,56 @@ function open_intro_handler(page) {
 			alert("Unfortunately, something went wrong processing your page request. Please try again");
 			break;
 	}
+}
+
+function makeSectionTitle(content, title) {
+	var secTitle = document.createElement("h1");
+		secTitle.id = "section_title";
+		secTitle.innerHTML = "<u>" + title + "</u>";
+	content.appendChild(secTitle);
+}
+
+function makeSectionDesc(content, desc) {
+	var secDesc = document.createElement("p");
+		secDesc.id = "section_description";
+		secDesc.innerHTML = desc;
+	content.appendChild(secDesc);
+}
+
+function makeFrame(content, title, link) {
+	
+	// title for the frame
+	var frameTitle = document.createElement("h3");
+		frameTitle.className = "frame_title";
+		frameTitle.innerHTML = title;
+	content.appendChild(frameTitle);
+	
+	// the frame itself
+	var frame = document.createElement("iframe");
+		frame.className = "slidedeck";
+		frame.frameBorder = 0;
+		frame.width = default_width;
+		frame.height = default_height;
+		frame.src = link;
+	content.appendChild(frame);
+}
+
+function startPageMisc(content) {
+	
+	// initially clear the div (content)
+	while(content.hasChildNodes())
+		content.removeChild(content.lastChild);
+	 
+	 // scroll to top of page
+	 document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+
+function finishPageMisc() {
+	
+	/*var iframes = document.getElementsByTagName("iframe");
+	for(var i=0; i<iframes.length; i++) {
+		var iframe = iframes[i];
+		iframe.width = default_width;
+		iframe.height = default_height;
+	}*/
 }

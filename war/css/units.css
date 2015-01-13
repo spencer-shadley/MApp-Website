@@ -60,6 +60,15 @@ iframe {
 	text-shadow: 1px 1px black;
 }
 
+#open_main, #open_luck {
+	color: #3EB1CF;
+	text-shadow: 1px 1px black;
+}
+
+#open_main {
+	text-align: left;
+}
+
 .frame_title {
 	color: #193E60;
 	font-size: 3em;
