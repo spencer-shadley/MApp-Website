@@ -28,10 +28,10 @@ iframe {
 	color: #45C5E6;
 	text-shadow: 2px 2px black;
 	margin-bottom: 0;
-	margin-top: 50px;
+	margin-top: 15px;
 	padding: 0px 0px 6px 0px;
-	font-size: 5em;
-	line-height: 44px;
+	font-size: 7em;
+	line-height: 1;
 	letter-spacing: -2px;
 	font-weight: bold;
 }
@@ -40,12 +40,12 @@ iframe {
 	color: #3EB1CF;
 	text-shadow: 2px 2px black;
 	font-family: Gill Sans, Verdana;
-	font-size: 2em;
+	font-size: 2.5em;
 	line-height: 14px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 30px;
 }
 
@@ -81,7 +81,7 @@ iframe {
 #recommendation {
 	color: #45CDC9;
 	text-shadow: 1px 1px black;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 #section_description {

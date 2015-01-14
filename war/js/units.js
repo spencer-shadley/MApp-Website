@@ -130,14 +130,49 @@ function makeFrame(content, title, link) {
 	content.appendChild(frame);
 }
 
+// Make the top portion of each unit page (unit title, description, line, etc.)
+function makeTopPage(div, unitTitle, unitDesc, aux) {
+	
+	// clear the div
+	removeChildren(div);
+	
+	// title of the unit (Unit 1)
+	var title = document.createElement("h1");
+		title.id = "unit_title";
+		title.innerHTML = "<u>" + unitTitle + "</u>";
+	div.appendChild(title);
+		
+	// description of unit (introduction to Android)
+	var desc = document.createElement("h2");
+		desc.id = "unit_descript";
+		desc.innerHTML = unitDesc;
+	div.appendChild(desc);
+	
+	// extra tags to insert before line (recommendation)
+	for(var i=0; i<aux.length; i++)
+		div.appendChild(aux[i]);
+	
+	// dividing line to separate top portion from rest of page (____)
+	var line = document.createElement("hr");
+		line.id = "dividing_line";
+	div.appendChild(line);
+}
+
 function startPageMisc(content) {
 	
 	// initially clear the div (content)
-	while(content.hasChildNodes())
-		content.removeChild(content.lastChild);
-	 
+	/*while(content.hasChildNodes())
+		content.removeChild(content.lastChild);*/
+	removeChildren(content); 
+	
 	 // scroll to top of page
 	 document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+
+function removeChildren(toRemove) {
+	if(toRemove)
+		while(toRemove.hasChildNodes())
+			toRemove.removeChild(toRemove.lastChild);
 }
 
 function finishPageMisc() {

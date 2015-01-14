@@ -13,6 +13,15 @@ var owTitle = document.getElementById("t-intro-ow-h");
 var gsTitle = document.getElementById("t-intro-gs-h");
 var qzTitle = document.getElementById("t-intro-qz-h");
 
+$(document).ready(function() {
+	
+	// make the top portion of the page
+	var recommend = document.createElement("h3");
+		recommend.id = "recommendation";
+		recommend.innerHTML = "<h3 id=\"recommendation\">It is recommended to install <a class=\"link\" target=\"_blank\" href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.feztheforeigner.mobileapps\">this<\/a> supplemental application and to take a look at <a class=\"link\" target=\"_blank\" href=\"https:\/\/docs.google.com\/document\/d\/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE\/pub\">this<\/a> document of helpful resources before beginning<\/h3>";
+	makeTopPage(document.getElementById("topPageDiv"), "Unit 1", "Introduction to Android", [recommend]);
+});
+
 // Load the overview section
 function open_intro_ow() {
 
@@ -25,8 +34,8 @@ function open_intro_ow() {
 	makeSectionDesc(content, "In this section you will learn about terms used in Android development, each Android version, custom versions of Android (skins) and a little about competing mobile platforms.");
 	
 	// generate the necessary iframes
-	makeFrame(content, "Android Terminology", "https://docs.google.com/presentation/d/1XhsIcV0mpGXRTycaFzhgFNcQtHqpdtWlqU-n00VmPcE/embed?start=false&loop=false&delayms=3000");
 	makeFrame(content, "Android Versions", "https://docs.google.com/presentation/d/11sfleClVTE7wDmtenDsN9cO44PBDlRCoSurdZPiY3ao/embed?start=false&loop=false&delayms=3000");
+	makeFrame(content, "Android Terminology", "https://docs.google.com/presentation/d/1XhsIcV0mpGXRTycaFzhgFNcQtHqpdtWlqU-n00VmPcE/embed?start=false&loop=false&delayms=3000");
 	makeFrame(content, "Custom OEM Skins", "https://docs.google.com/presentation/d/1xjoFTC_SZHZjSEm47xpvz8CNzsks3AB5ln9Re3LyIOE/embed?start=false&loop=false&delayms=3000");
 	makeFrame(content, "Overview of Mobile Operating Systems", "https://docs.google.com/presentation/d/1DPaJ101iHZ13T-45rOBpwGR_2hGx2K_W1Cgc4kWRKd8/embed?start=false&loop=false&delayms=3000");
 
