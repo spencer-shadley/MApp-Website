@@ -13,6 +13,16 @@ iframe {
 	webkitallowfullscreen: true;
 }
 
+#dividing_line {
+    border: 0;
+    height: 1px;
+    background: #949BFE;
+    background-image: -webkit-linear-gradient(left, #c294ff, #949BFE, #c294ff); 
+    background-image:    -moz-linear-gradient(left, #c294ff, #949BFE, #c294ff); 
+    background-image:     -ms-linear-gradient(left, #c294ff, #949BFE, #c294ff); 
+    background-image:      -o-linear-gradient(left, #c294ff, #949BFE, #c294ff); 
+}
+
 #unit_title {
 	font-family: times, Times New Roman, times-roman, georgia, serif;
 	color: #45C5E6;
@@ -39,29 +49,53 @@ iframe {
 	margin-bottom: 30px;
 }
 
-#section_title {
+/* #section_title {
 	margin-top: 50px;
 	font-family: times, Times New Roman, times-roman, georgia, serif;
 	font-size: 4em;
 	font-weight: bold;
+	color: #45C5E6;
+	text-shadow: 1px 1px black;
+} */
+
+#section_title {
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #45C5E6;
+	text-shadow: 1px 1px black;
+	margin-bottom: 0;
+	margin-top: 50px;
+	padding: 0px 0px 6px 0px;
+	font-size: 4em;
+	line-height: 1;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+
+#section_description {
+	text-shadow: 1px 1px black;
+	font-size: 1.5em;
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+#recommendation {
 	color: #45CDC9;
 	text-shadow: 1px 1px black;
+	font-size: 2em;
 }
 
 #section_description {
 	color: #45CDC9;
 	text-shadow: 1px 1px black;
-	font-size: 1.5em;
-	margin-bottom: 50px;
 }
 
-#recommendation {
-	color: #3EB1CF;
+#open_main {
+	color: #45CDC9;
 	text-shadow: 1px 1px black;
 }
 
-#open_main, #open_luck {
-	color: #3EB1CF;
+#open_luck {
+	color: #45CDC9;
 	text-shadow: 1px 1px black;
 }
 
@@ -69,21 +103,33 @@ iframe {
 	text-align: left;
 }
 
-.frame_title {
-	color: #193E60;
+/* .frame_title {
+	color: #3EB1CF;
 	font-size: 3em;
 	margin-top: 70px;
 	font-weight: bold;
-	text-shadow: 1px 1px black;
+	text-shadow: 0px 0px 1px black;
+} */
+
+.frame_title {
+	color: #3EB1CF;
+	text-shadow: 2px 2px black;
+	font-family: Gill Sans, Verdana;
+	font-size: 3em;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin: 70px 20% 7px 20%; /* top right bottom left */
 }
 
 .link {
-	color: cyan !important;
+	color: #949BFE !important;
 	shadow: 0px 0px 6px yellow !important;
 }
 
 .link:hover {
-	color: #4DDBFF !important;
+	color: #c294ff !important;
 }
 
 /** Each column at bottom of page **/
@@ -91,6 +137,7 @@ iframe {
 	cursor: pointer;
 	margin-top: 35px;
 	color: black;
+	font-size: 1em;
 }
 
 /** All three columns at bottom of page **/
