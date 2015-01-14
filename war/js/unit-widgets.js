@@ -27,7 +27,7 @@ $(document).ready(function() {
 	var recommend = document.createElement("h3");
 		recommend.id = "recommendation";
 		recommend.innerHTML = "Don't forget, if you would like to open a document in a larger view, just click any purple title.";
-	makeTopPage(document.getElementById("topPageDiv"), "Unit 3", "Introduction to Android", [recommend]);
+	makeTopPage(document.getElementById("topPageDiv"), "Unit 3", unit3Title, [recommend]);
 	
 	// set titles for bottom links
 	leftTitle.innerHTML = left_header;
@@ -63,7 +63,8 @@ function open_left() {
 	makeDoc(content, "ToggleButton Docs (by Google)", "http://developer.android.com/reference/android/widget/ToggleButton.html");
 	insertLine(content);
 	
-	makeDoc(content, "Basics of a TextView (By Java Code Geeks)", "http://examples.javacodegeeks.com/android/core/widget/textview/android-textview-example/");
+	makeFrame(content, "TextView", "https://docs.google.com/presentation/d/1p8VDLUx67zeDLnjoEsI-Fm6HwJm740u1rDP76Bomn3o/embed?start=false&loop=false&delayms=5000");
+	makeDoc(content, "TextView Example (By Java Code Geeks)", "http://examples.javacodegeeks.com/android/core/widget/textview/android-textview-example/");
 	makeDoc(content, "TextView Docs (by Google)", "http://developer.android.com/reference/android/widget/TextView.html");
 	insertLine(content);
 	
@@ -96,6 +97,7 @@ function open_middle() {
 	makeSectionDesc(content, middleDesc);
 	
 	// create the necessary iframes
+	makeFrame(content, "Android Lifecycle", "https://docs.google.com/presentation/d/1u9zdI3wLnNlS9v5qsARUndPywIkTgvmZRXEsNxXwOMs/embed?start=false&loop=false&delayms=5000");
 	makeDoc(content, "Android Activity - Simple Tutorial (by Mkyong)", "http://www.mkyong.com/android/android-activity-from-one-screen-to-another-screen/");
 	makeDoc(content, "Android Activity Docs (by Google)", "http://developer.android.com/training/basics/activity-lifecycle/starting.html");
 	insertLine(content);
