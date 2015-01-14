@@ -22,7 +22,7 @@ $(document).ready(function() {
 	makeTopPage(document.getElementById("topPageDiv"), "Unit 1", "Introduction to Android", [recommend]);
 });
 
-// Load the overview section
+// create the 'Overview' section
 function open_left() {
 
 	// get the div to add to and perform miscellaneous functions
@@ -53,6 +53,7 @@ function open_left() {
 	finishPageMisc();
 }
 
+// create the 'Getting Started' section
 function open_middle() { 
 
 	// get the div to add to and perform miscellaneous functions
@@ -83,6 +84,7 @@ function open_middle() {
 	finishPageMisc();
 }
 
+// create the 'Quizzes!' section
 function open_right() {
 
 	// get the div to add to and perform miscellaneous functions
