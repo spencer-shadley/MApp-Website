@@ -4,12 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Introduction</title>
 
-<!-- jQuery (pulled from Google) -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- 
-<!-- script for page -->
-<script src="../js/units.js"></script>
-
 <!-- stylesheets -->
 <link rel="stylesheet" href="../css/units.css" type="text/css"/>
 <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
@@ -21,62 +15,44 @@
 <div id="header"></div>
 
 <!-- Description of Unit at Top of Page -->
-<div class="center">
-<h1 id="unit_title"><u>Unit 1</u></h1>
-<h2 id="unit_descript">Introduction to Android</h2>
-<h3 id="recommendation">It is recommended to install <a class="link" target="_blank" href="https://play.google.com/store/apps/details?id=com.feztheforeigner.mobileapps">this</a> supplemental application and taking a look at <a class="link" href="https://docs.google.com/document/d/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE/pub">this</a> document of helpful resources before beginning</h3>
-<hr></hr>
-</div>
+<div id="topPageDiv" class="center"></div>
 
-<!-- All content for page -->
+<!-- Contains content (slidedecks mostly) for page -->
 <div id="content" class="center">
-
-<!-- Initially load Overview -->
-
-<!-- Section Description -->
-<h1 id="section_title"><u>Overview</u></h1>
-<p id="section_description">In this section you will learn about terms used in Android development, each Android version, custom versions of Android (skins) and a little about competing mobile platforms.</p>
-
-<!-- Android Terminology -->
-<h3 class="frame_title">Android Terminology</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1XhsIcV0mpGXRTycaFzhgFNcQtHqpdtWlqU-n00VmPcE/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
-<!-- Android Versions -->
-<h3 class="frame_title">Android Versions</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/11sfleClVTE7wDmtenDsN9cO44PBDlRCoSurdZPiY3ao/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
-<!-- Custom OEM Skins -->
-<h3 class="frame_title">Custom OEM Skins</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1xjoFTC_SZHZjSEm47xpvz8CNzsks3AB5ln9Re3LyIOE/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
-<!-- Overview of Mobile Operating Systems -->
-<h3 class="frame_title">Overview of Mobile Operating Systems</h3>
-<iframe class="slidedeck" src="https://docs.google.com/presentation/d/1DPaJ101iHZ13T-45rOBpwGR_2hGx2K_W1Cgc4kWRKd8/embed?start=false&loop=false&delayms=3000" frameborder="0"></iframe>
-
+<h1 id="open_main">Welcome to Unit 2! You've (hopefully) made it through <a class="link" target="_blank" href="tutorial-intro.html">Introduction to Android</a> and are ready to get serious building a great Android application! In this unit you will begin your first Android application while learning about different kinds of Android widgets (with more to come in Unit 3.)</h1>
+<h1 id="open_luck">Ready, Set, Go!</h1>
 </div> <!-- content -->
  
  
 <!-- Three columns of text below the carousel -->
 <div id="bottom_row" class="row center">
-  <div id="bottom_col_ow" class="col-lg-4 bottom_col_div" onclick="open_intro_ow()">
+  <div id="bottom_col_left" class="col-lg-4 bottom_col_div" onclick="open_left()">
     <img class="img-circle" src="../res/overview.png" alt="overview" style="width: 140px; height: 140px;">
-    <h2 id="t-intro-ow-h"><u>Overview</u></h2>
+    <h2 id="t-left-h">Go!</h2>
     <p>Learn how to setup your Android development environment, Android terminology, Android versions, custom OEM skins and the different types of mobile Operating Systems.</p>
-    <button id="t-intro-ow-bt" class="bottom_btn">Reload</button>
+    <button id="t-left-bt" class="bottom_btn">Begin</button>
   </div>
-  <div id="bottom_col_gs" class="col-lg-4 bottom_col_div" onclick="open_intro_gs()">
+  <div id="bottom_col_middle" class="col-lg-4 bottom_col_div" onclick="open_middle()">
     <img class="img-circle" src="../res/start.png" alt="getting started" style="width: 140px; height: 140px;">
-    <h2 id="t-intro-gs-h">Getting Started</h2>
+    <h2 id="t-middle-h">Project</h2>
     <p>Discover the difference between density-independent pixels and pixels, how to store global variables/resources and different representations of width and height in your layouts.</p>
-    <button id="t-intro-gs-bt" class="bottom_btn">Begin</button>
+    <button id="t-middle-bt" class="bottom_btn">Begin</button>
   </div>
-  <div id="bottom_col_qz" onclick="open_intro_quizzes()" class="col-lg-4 bottom_col_div">
+  <div id="bottom_col_right" onclick="open_right()" class="col-lg-4 bottom_col_div">
     <img class="img-circle" src="../res/quiz.png" alt="quiz" style="width: 140px; height: 140px;">
-    <h2 id="t-intro-qz-h">Quizzes</h2>
+    <h2 id="t-right-h">Test</h2>
     <p>For the adventurous quizzes are provided to test your knowledge in Android terminology, Android versions and how density-indpendent pixels differ from plain old pixels.</p>
-  	<button id="t-intro-qz-bt" class="bottom_btn">Begin</button>
+  	<button id="t-right-bt" class="bottom_btn">Begin</button>
   </div>
 </div>
+
+
+<!-- jQuery (pulled from Google) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  
+<!-- script for page -->
+<script src="../js/units.js"></script>
+<script src="../js/unit-create.js"></script>
+
 </body>
 </html>

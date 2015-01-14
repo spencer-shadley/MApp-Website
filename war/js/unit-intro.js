@@ -1,17 +1,17 @@
-var ow_header = "Overview";
-var gs_header = "Getting Started";
-var qz_header = "Quizzes";
+var left_header = "Overview";
+var middle_header = "Getting Started";
+var right_header = "Quizzes";
 
 var bClicked = "Reload";
 var bUnclicked = "Begin";
 
-var owBtn = document.getElementById("t-intro-ow-bt");
-var gsBtn = document.getElementById("t-intro-gs-bt");
-var qzBtn = document.getElementById("t-intro-qz-bt");
+var leftBtn = document.getElementById("t-left-bt");
+var middleBtn = document.getElementById("t-middle-bt");
+var rightBtn = document.getElementById("t-right-bt");
 
-var owTitle = document.getElementById("t-intro-ow-h");
-var gsTitle = document.getElementById("t-intro-gs-h");
-var qzTitle = document.getElementById("t-intro-qz-h");
+var leftTitle = document.getElementById("t-left-h");
+var middleTitle = document.getElementById("t-middle-h");
+var rightTitle = document.getElementById("t-right-h");
 
 $(document).ready(function() {
 	
@@ -23,7 +23,7 @@ $(document).ready(function() {
 });
 
 // Load the overview section
-function open_intro_ow() {
+function open_left() {
 
 	// get the div to add to and perform miscellaneous functions
 	var content = document.getElementById("content");
@@ -40,20 +40,20 @@ function open_intro_ow() {
 	makeFrame(content, "Overview of Mobile Operating Systems", "https://docs.google.com/presentation/d/1DPaJ101iHZ13T-45rOBpwGR_2hGx2K_W1Cgc4kWRKd8/embed?start=false&loop=false&delayms=3000");
 
 	// underline title
-	owTitle.innerHTML = "<u>" + ow_header + "</u>";
-	gsTitle.innerHTML = gs_header;
-	qzTitle.innerHTML = qz_header;
+	leftTitle.innerHTML = "<u>" + left_header + "</u>";
+	middleTitle.innerHTML = middle_header;
+	rightTitle.innerHTML = right_header;
 	
 	// update button text
-	owBtn.innerHTML = bClicked;
-	gsBtn.innerHTML = bUnclicked;
-	qzBtn.innerHTML = bUnclicked;
+	leftBtn.innerHTML = bClicked;
+	middleBtn.innerHTML = bUnclicked;
+	rightBtn.innerHTML = bUnclicked;
 	
 	// miscellaneous functions after loaded
 	finishPageMisc();
 }
 
-function open_intro_gs() { 
+function open_middle() { 
 
 	// get the div to add to and perform miscellaneous functions
 	var content = document.getElementById("content");
@@ -70,20 +70,20 @@ function open_intro_gs() {
 	makeFrame(content, "Using and Calling Drawables and Values", "https://docs.google.com/presentation/d/1eHDPJ5V1BYJt5XsqguVpGSABYL_efyhmLv8Z9mz2VpQ/embed?start=false&loop=false&delayms=3000");
 
 	// underline title
-	owTitle.innerHTML = ow_header;
-	gsTitle.innerHTML = "<u>" + gs_header + "</u>";
-	qzTitle.innerHTML = qz_header;
+	leftTitle.innerHTML = left_header;
+	middleTitle.innerHTML = "<u>" + middle_header + "</u>";
+	rightTitle.innerHTML = right_header;
 	
 	// update button text
-	owBtn.innerHTML = bUnclicked;
-	gsBtn.innerHTML = bClicked;
-	qzBtn.innerHTML = bUnclicked;
+	leftBtn.innerHTML = bUnclicked;
+	middleBtn.innerHTML = bClicked;
+	rightBtn.innerHTML = bUnclicked;
 	
 	// miscellaneous functions after loaded
 	finishPageMisc();
 }
 
-function open_intro_quizzes() {
+function open_right() {
 
 	// get the div to add to and perform miscellaneous functions
 	var content = document.getElementById("content");
@@ -99,14 +99,14 @@ function open_intro_quizzes() {
 	makeFrame(content, "Difference Between DP and PX Quiz", "https://docs.google.com/presentation/d/1FsngA_z9Bo2jjbfFsAYCtL-lQRsnATkJLLkttFat8W0/embed?start=false&loop=false&delayms=3000");
 
 	// underline title
-	owTitle.innerHTML = ow_header;
-	gsTitle.innerHTML = gs_header;
-	qzTitle.innerHTML = "<u>" + qz_header + "</u>";
+	leftTitle.innerHTML = left_header;
+	middleTitle.innerHTML = middle_header;
+	rightTitle.innerHTML = "<u>" + right_header + "</u>";
 	
 	// update button text
-	owBtn.innerHTML = bUnclicked;
-	gsBtn.innerHTML = bUnclicked;
-	qzBtn.innerHTML = bClicked;
+	leftBtn.innerHTML = bUnclicked;
+	middleBtn.innerHTML = bUnclicked;
+	rightBtn.innerHTML = bClicked;
 	
 	// miscellaneous functions after loaded
 	finishPageMisc();

@@ -130,6 +130,36 @@ function makeFrame(content, title, link) {
 	content.appendChild(frame);
 }
 
+function makeDoc(content, title, link) {
+	
+	// remove embedding from the link
+	var embed = "?embedded=true";
+	var linkNoEmbed;
+	if(link.indexOf(embed) > -1) {
+		var embedStartIndex = link.indexOf(embed);
+		var embedEndIndex = embedStartIndex + embed.length;
+		linkNoEmbed = 	link.substring(0, embedStartIndex) + 
+						link.substring(embedEndIndex);
+	} else {
+		linkNoEmbed = link;
+	}
+	
+	// title for the doc
+	var frameTitle = document.createElement("h3");
+		frameTitle.className = "frame_title";
+		frameTitle.innerHTML = "<a class='link' target='_blank' href='" + link + "'>" + title + "</a>";
+	content.appendChild(frameTitle);
+	
+	// the doc itself
+	var frame = document.createElement("iframe");
+		frame.className = "doc";
+		frame.frameBorder = 0;
+		frame.width = default_width;
+		frame.height = default_doc_height;
+		frame.src = link;
+	content.appendChild(frame);
+}
+
 // Make the top portion of each unit page (unit title, description, line, etc.)
 function makeTopPage(div, unitTitle, unitDesc, aux) {
 	
@@ -158,6 +188,7 @@ function makeTopPage(div, unitTitle, unitDesc, aux) {
 	div.appendChild(line);
 }
 
+// miscellaneous functions to complete before loading page content
 function startPageMisc(content) {
 	
 	// initially clear the div (content)
@@ -169,12 +200,14 @@ function startPageMisc(content) {
 	 document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
+// remove all underlying children from an element
 function removeChildren(toRemove) {
-	if(toRemove)
+	if(toRemove) // make sure toRemove is not null
 		while(toRemove.hasChildNodes())
 			toRemove.removeChild(toRemove.lastChild);
 }
 
+//miscellaneous functions to complete after loading page content
 function finishPageMisc() {
 	
 	/*var iframes = document.getElementsByTagName("iframe");

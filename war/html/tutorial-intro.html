@@ -15,14 +15,9 @@
 <div id="header"></div>
 
 <!-- Description of Unit at Top of Page -->
-<div id="topPageDiv" class="center">
-<!-- <h1 id="unit_title"><u>Unit 1</u></h1>
-<h2 id="unit_descript">Introduction to Android</h2>
-<h3 id="recommendation">It is recommended to install <a class="link" target="_blank" href="https://play.google.com/store/apps/details?id=com.feztheforeigner.mobileapps">this</a> supplemental application and taking a look at <a class="link" target="_blank" href="https://docs.google.com/document/d/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE/pub">this</a> document of helpful resources before beginning</h3>
-<hr id="dividing_line"></hr> -->
-</div>
+<div id="topPageDiv" class="center"></div>
 
-<!-- All content for page -->
+<!-- Contains content (slidedecks mostly) for page -->
 <div id="content" class="center">
 <h1 id="open_main">Welcome to Mobile Application Development! Below are links to sections where you can begin learning, it is intended for you to go from left to right (beginning at "Overview") but feel free to go in any order you would like!</h1>
 <h1 id="open_luck">Good luck and have fun!</h1>
@@ -31,23 +26,23 @@
  
 <!-- Three columns of text below the carousel -->
 <div id="bottom_row" class="row center">
-  <div id="bottom_col_ow" class="col-lg-4 bottom_col_div" onclick="open_intro_ow()">
+  <div id="bottom_col_left" class="col-lg-4 bottom_col_div" onclick="open_left()">
     <img class="img-circle" src="../res/overview.png" alt="overview" style="width: 140px; height: 140px;">
-    <h2 id="t-intro-ow-h">Overview</h2>
+    <h2 id="t-left-h">Overview</h2>
     <p>Learn how to setup your Android development environment, Android terminology, Android versions, custom OEM skins and the different types of mobile Operating Systems.</p>
-    <button id="t-intro-ow-bt" class="bottom_btn">Begin</button>
+    <button id="t-left-bt" class="bottom_btn">Begin</button>
   </div>
-  <div id="bottom_col_gs" class="col-lg-4 bottom_col_div" onclick="open_intro_gs()">
+  <div id="bottom_col_middle" class="col-lg-4 bottom_col_div" onclick="open_middle()">
     <img class="img-circle" src="../res/start.png" alt="getting started" style="width: 140px; height: 140px;">
-    <h2 id="t-intro-gs-h">Getting Started</h2>
+    <h2 id="t-middle-h">Getting Started</h2>
     <p>Discover the difference between density-independent pixels and pixels, how to store global variables/resources and different representations of width and height in your layouts.</p>
-    <button id="t-intro-gs-bt" class="bottom_btn">Begin</button>
+    <button id="t-middle-bt" class="bottom_btn">Begin</button>
   </div>
-  <div id="bottom_col_qz" onclick="open_intro_quizzes()" class="col-lg-4 bottom_col_div">
+  <div id="bottom_col_right" class="col-lg-4 bottom_col_div" onclick="open_right()">
     <img class="img-circle" src="../res/quiz.png" alt="quiz" style="width: 140px; height: 140px;">
-    <h2 id="t-intro-qz-h">Quizzes</h2>
+    <h2 id="t-right-h">Quizzes</h2>
     <p>For the adventurous quizzes are provided to test your knowledge in Android terminology, Android versions and how density-indpendent pixels differ from plain old pixels.</p>
-  	<button id="t-intro-qz-bt" class="bottom_btn">Begin</button>
+  	<button id="t-right-bt" class="bottom_btn">Begin</button>
   </div>
 </div>
 
