@@ -21,6 +21,10 @@ $(document).ready(function() {
 		recommend.innerHTML = "<h3 id=\"recommendation\">It is recommended to install <a class=\"link\" target=\"_blank\" href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.feztheforeigner.mobileapps\">this<\/a> supplemental application and to take a look at <a class=\"link\" target=\"_blank\" href=\"https:\/\/docs.google.com\/document\/d\/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE\/pub\">this<\/a> document of helpful resources before beginning<\/h3>";
 	makeTopPage(document.getElementById("topPageDiv"), "Unit 2", "Introduction to Android", [recommend]);
 
+	// set titles
+	leftTitle.innerHTML = left_header;
+	middleTitle.innerHTML = middle_header;
+	rightTitle.innerHTML = right_header;
 });
 
 // create 'Go!' section
@@ -36,7 +40,13 @@ function open_left() {
 	
 	// generate the necessary iframes
 	makeFrame(content, "Eclipse Hints", "https://docs.google.com/presentation/d/13IU-kcTcrxDYKhhgsYdn_Iv-UYzW4oG2mSH9CEMNGzw/embed?start=false&loop=false&delayms=5000");
+	insertLine(content);
+	
 	makeFrame(content, "RadioGroup | RadioButton", "https://docs.google.com/presentation/d/17XhqKZoCjnIkqu-n67UiHUKKGRXbtaMoOS9jVV6ZbEo/embed?start=false&loop=false&delayms=5000");
+	makeDoc(content, "RadioGroup Docs (by Google)", "http://developer.android.com/reference/android/widget/RadioGroup.html");
+	makeDoc(content, "RadioButton Docs (by Google)", "http://developer.android.com/reference/android/widget/RadioButton.html");
+	insertLine(content);
+	
 	makeFrame(content, "Ids in XML and Java", "https://docs.google.com/presentation/d/1QoTOsUf0rOEBqcBpqJJ44x0Z0KO4uyVLQYpsfAPdU1w/embed?start=false&loop=false&delayms=5000");
 	
 	// underline title
@@ -66,6 +76,8 @@ function open_middle() {
 	
 	// generate the necessary iframes
 	makeDoc(content, "What's an App?", "https://docs.google.com/document/d/1kevW8xqpUg5ZpEN9pKDAxu8etVqUDQge6jhfm7-ENyU/pub?embedded=true");
+	insertLine(content);
+	
 	makeDoc(content, "Make an App with RadioButtons", "https://docs.google.com/document/d/1hiMvgxUnJpwXNIXdqPOTYmy03ZJZt0Vj7f-4Zfx1n04/pub?embedded=true");
 	
 	// underline title

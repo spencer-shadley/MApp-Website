@@ -20,6 +20,11 @@ $(document).ready(function() {
 		recommend.id = "recommendation";
 		recommend.innerHTML = "<h3 id=\"recommendation\">It is recommended to install <a class=\"link\" target=\"_blank\" href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.feztheforeigner.mobileapps\">this<\/a> supplemental application and to take a look at <a class=\"link\" target=\"_blank\" href=\"https:\/\/docs.google.com\/document\/d\/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE\/pub\">this<\/a> document of helpful resources before beginning<\/h3>";
 	makeTopPage(document.getElementById("topPageDiv"), "Unit 1", "Introduction to Android", [recommend]);
+	
+	// set titles
+	leftTitle.innerHTML = left_header;
+	middleTitle.innerHTML = middle_header;
+	rightTitle.innerHTML = right_header;
 });
 
 // create the 'Overview' section

@@ -160,6 +160,12 @@ function makeDoc(content, title, link) {
 	content.appendChild(frame);
 }
 
+function insertLine(div) {
+	var line = document.createElement("hr");
+		line.id = "dividing_line";
+	div.appendChild(line);
+}
+
 // Make the top portion of each unit page (unit title, description, line, etc.)
 function makeTopPage(div, unitTitle, unitDesc, aux) {
 	
@@ -183,17 +189,13 @@ function makeTopPage(div, unitTitle, unitDesc, aux) {
 		div.appendChild(aux[i]);
 	
 	// dividing line to separate top portion from rest of page (____)
-	var line = document.createElement("hr");
-		line.id = "dividing_line";
-	div.appendChild(line);
+	insertLine(div);
 }
 
 // miscellaneous functions to complete before loading page content
 function startPageMisc(content) {
 	
 	// initially clear the div (content)
-	/*while(content.hasChildNodes())
-		content.removeChild(content.lastChild);*/
 	removeChildren(content); 
 	
 	 // scroll to top of page
@@ -207,13 +209,7 @@ function removeChildren(toRemove) {
 			toRemove.removeChild(toRemove.lastChild);
 }
 
-//miscellaneous functions to complete after loading page content
+// miscellaneous functions to complete after loading page content
 function finishPageMisc() {
-	
-	/*var iframes = document.getElementsByTagName("iframe");
-	for(var i=0; i<iframes.length; i++) {
-		var iframe = iframes[i];
-		iframe.width = default_width;
-		iframe.height = default_height;
-	}*/
+	// no longer necessary, left for possible future cases
 }
