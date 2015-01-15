@@ -141,7 +141,7 @@ function makeFrame(content, title, link) {
 
 function makeDoc(content, title, link) {
 	
-	// remove embedding from the link
+	// remove embedding from link
 	var embed = "?embedded=true";
 	var linkNoEmbed;
 	if(link.indexOf(embed) > -1) {
@@ -170,9 +170,8 @@ function makeDoc(content, title, link) {
 }
 
 function makeDocCustomHeight(content, title, height, link) {
-
 	
-	// remove embedding from the link
+	// remove embedding from link
 	var embed = "?embedded=true";
 	var linkNoEmbed;
 	if(link.indexOf(embed) > -1) {

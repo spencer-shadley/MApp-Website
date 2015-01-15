@@ -2,9 +2,52 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Publishing</title>
+<title>Putting it Together</title>
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="../css/units.css" type="text/css"/>
+<link rel="stylesheet" href="../css/styles.css" type="text/css"/>
+
 </head>
 <body>
-<h1>publish</h1>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- Description of Unit at Top of Page -->
+<div id="topPageDiv" class="center"></div>
+
+<!-- Contains content (slidedecks mostly) for page -->
+<div id="content" class="center">
+<h1 id="open_main">This Unit is focused on finalizing all that you've learned and plugging any remaining holes in your Android know-how. A few of the topics covered are: storing user preferences, the Android Manifest, Toast (yes, toast), vibrations, sounds, URIs and navigation with an ActionBar as well as Navigation Tabs.</h1>
+<h1 id="open_luck">Finalize your Android knowledge!</h1>
+</div> <!-- content -->
+ 
+ 
+<!-- Three columns of text below the carousel -->
+<div id="bottom_row" class="row center">
+  <div id="bottom_col_left" class="col-lg-6 bottom_col_div" onclick="open_left()">
+    <img class="img-circle" src="../res/overview.png" alt="overview" style="width: 140px; height: 140px;">
+    <h2 id="t-left-h"></h2>
+    <p id="left-desc"></p>
+    <button id="t-left-bt" class="bottom_btn">Begin</button>
+  </div>
+  <div id="bottom_col_right" class="col-lg-6 bottom_col_div" onclick="open_right()">
+    <img class="img-circle" src="../res/quiz.png" alt="quiz" style="width: 140px; height: 140px;">
+    <h2 id="t-right-h"></h2>
+    <p id="right-desc"></p>
+  	<button id="t-right-bt" class="bottom_btn">Begin</button>
+  </div>
+</div>
+
+
+<!-- jQuery (pulled from Google) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 
+<!-- script for page -->
+<script src="../js/units.js"></script>
+<script src="../js/resources.js"></script>
+<script src="../js/unit-publish.js"></script>
+
 </body>
 </html>
