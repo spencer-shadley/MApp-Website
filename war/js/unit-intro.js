@@ -18,9 +18,9 @@ $(document).ready(function() {
 	// make the top portion of the page
 	var recommend = document.createElement("h3");
 		recommend.id = "recommendation";
-		recommend.innerHTML = "<h3 id=\"recommendation\">It is recommended to install <a class=\"link\" target=\"_blank\" href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.feztheforeigner.mobileapps\">this<\/a> supplemental application and to take a look at <a class=\"link\" target=\"_blank\" href=\"https:\/\/docs.google.com\/document\/d\/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE\/pub\">this<\/a> document of helpful resources before beginning<\/h3>";
+		recommend.innerHTML = "<h3 id=\"recommendation\">It is recommended to install <a class=\"link\" target=\"_blank\" href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.feztheforeigner.mobileapps\">this supplemental application<\/a> and to take a look at <a class=\"link\" target=\"_blank\" href=\"https:\/\/docs.google.com\/document\/d\/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE\/pub\">this document<\/a> of helpful resources before beginning<\/h3>";
 	makeTopPage(document.getElementById("topPageDiv"), "Unit 1", unit1Title, [recommend]);
-	
+
 	// set titles
 	leftTitle.innerHTML = left_header;
 	middleTitle.innerHTML = middle_header;

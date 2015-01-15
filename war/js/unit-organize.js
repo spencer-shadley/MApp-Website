@@ -2,9 +2,9 @@ var left_header = "Start";
 var middle_header = "More";
 var right_header = "Even More";
 
-var leftDesc = "desasdf";
-var middleDesc = "sfd";
-var rightDesc = "fsfwe";
+var leftDesc = "Make your programming more versatile with these essential tutorials. The covered topics are Toast Notifications, the Android Manifest, Intents, icons and how to store user preferences.";
+var middleDesc = "Yet more learning! See an example of building a ListView, how to link to outside sources within your applications, how to make an Android device vibrate and play sounds!";
+var rightDesc = "For the navigation-centric, see how to implement your own ActionBar and Navigation Tabs.";
 
 var bClicked = "Reload";
 var bUnclicked = "Begin";
@@ -26,8 +26,8 @@ $(document).ready(function() {
 	// make the top portion of the page
 	var recommend = document.createElement("h3");
 		recommend.id = "recommendation";
-		recommend.innerHTML = "Don't forget, if you would like to open a document in a larger view, just click any purple title.";
-	makeTopPage(document.getElementById("topPageDiv"), "Unit 4", unit3Title, [recommend]);
+		recommend.innerHTML = "Here are <a href='../html/resources.html' target='_blank' class='link'>some resources</a> you may want to check out!";
+	makeTopPage(document.getElementById("topPageDiv"), "Unit 4", unit4Title, [recommend]);
 	
 	// set titles for bottom links
 	leftTitle.innerHTML = left_header;
