@@ -70,6 +70,10 @@ iframe {
 	text-align: left;
 }
 
+.section_description_center {
+	text-align: center !important;
+}
+
 #recommendation {
 	color: #45CDC9;
 	text-shadow: 1px 1px black;

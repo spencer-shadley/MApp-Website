@@ -112,6 +112,15 @@ function makeSectionDesc(content, desc) {
 	content.appendChild(secDesc);
 }
 
+// center-aligned, instead of left (better for shorter descriptions)
+function makeSectionDescCenter(content, desc) {
+	var secDesc = document.createElement("p");
+		secDesc.id = "section_description";
+		secDesc.className = "section_description_center";
+		secDesc.innerHTML = desc;
+	content.appendChild(secDesc);
+}
+
 function makeFrame(content, title, link) {
 	
 	// title for the frame
@@ -156,6 +165,37 @@ function makeDoc(content, title, link) {
 		frame.frameBorder = 0;
 		frame.width = default_width;
 		frame.height = default_doc_height;
+		frame.src = link;
+	content.appendChild(frame);
+}
+
+function makeDocCustomHeight(content, title, height, link) {
+
+	
+	// remove embedding from the link
+	var embed = "?embedded=true";
+	var linkNoEmbed;
+	if(link.indexOf(embed) > -1) {
+		var embedStartIndex = link.indexOf(embed);
+		var embedEndIndex = embedStartIndex + embed.length;
+		linkNoEmbed = 	link.substring(0, embedStartIndex) + 
+						link.substring(embedEndIndex);
+	} else {
+		linkNoEmbed = link;
+	}
+	
+	// title for the doc
+	var frameTitle = document.createElement("h3");
+		frameTitle.className = "frame_title";
+		frameTitle.innerHTML = "<a class='link' target='_blank' href='" + link + "'>" + title + "</a>";
+	content.appendChild(frameTitle);
+	
+	// the doc itself
+	var frame = document.createElement("iframe");
+		frame.className = "doc";
+		frame.frameBorder = 0;
+		frame.width = default_width;
+		frame.height = height;
 		frame.src = link;
 	content.appendChild(frame);
 }
