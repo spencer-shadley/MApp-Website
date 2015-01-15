@@ -2,6 +2,10 @@ var left_header = "Overview";
 var middle_header = "Getting Started";
 var right_header = "Quizzes";
 
+var leftDesc = "Learn how to setup your Android development environment, Android terminology, Android versions, custom OEM skins and the different types of mobile Operating Systems.";
+var middleDesc = "In this section you will learn about the differences between density-independent pixels compared to regular pixels, how to setup layouts in Android and the best practices for storing resources in Android apps.";
+var rightDesc = "For the adventurous, quizzes are provided to test your knowledge in Android terminology, Android versions and how density-independent pixels differ from plain old pixels.";
+
 var bClicked = "Reload";
 var bUnclicked = "Begin";
 
@@ -13,6 +17,10 @@ var leftTitle = document.getElementById("t-left-h");
 var middleTitle = document.getElementById("t-middle-h");
 var rightTitle = document.getElementById("t-right-h");
 
+var leftP = document.getElementById("left-desc");
+var middleP = document.getElementById("middle-desc");
+var rightP = document.getElementById("right-desc");
+
 $(document).ready(function() {
 	
 	// make the top portion of the page
@@ -21,10 +29,15 @@ $(document).ready(function() {
 		recommend.innerHTML = "<h3 id=\"recommendation\">It is recommended to install <a class=\"link\" target=\"_blank\" href=\"https:\/\/play.google.com\/store\/apps\/details?id=com.feztheforeigner.mobileapps\">this supplemental application<\/a> and to take a look at <a class=\"link\" target=\"_blank\" href=\"https:\/\/docs.google.com\/document\/d\/1NLlqwjfeYApoQ1_kniT4VbBIS05QQC6gOvm7OdhseeE\/pub\">this document<\/a> of helpful resources before beginning<\/h3>";
 	makeTopPage(document.getElementById("topPageDiv"), "Unit 1", unit1Title, [recommend]);
 
-	// set titles
+	// set titles for bottom links
 	leftTitle.innerHTML = left_header;
 	middleTitle.innerHTML = middle_header;
 	rightTitle.innerHTML = right_header;
+	
+	// set descriptions for bottom links
+	leftP.innerHTML = leftDesc;
+	middleP.innerHTML = middleDesc;
+	rightP.innerHTML = rightDesc;
 });
 
 // create the 'Overview' section
@@ -36,7 +49,8 @@ function open_left() {
 	
 	// make the top portion
 	makeSectionTitle(content, "Overview");
-	makeSectionDesc(content, "In this section you will learn about terms used in Android development, each Android version, custom versions of Android (skins) and a little about competing mobile platforms.");
+//	makeSectionDesc(content, "In this section you will learn about terms used in Android development, each Android version, custom versions of Android (skins) and a little about competing mobile platforms.");
+	makeSectionDesc(content, leftDesc);
 	
 	// generate the necessary iframes
 	makeFrame(content, "Android Versions", "https://docs.google.com/presentation/d/11sfleClVTE7wDmtenDsN9cO44PBDlRCoSurdZPiY3ao/embed?start=false&loop=false&delayms=3000");
@@ -67,7 +81,8 @@ function open_middle() {
 	
 	// make the top portion
 	makeSectionTitle(content, "Getting Started");
-	makeSectionDesc(content, "In this section you will learn about the differences between density-independent pixels compared to regular pixels, how to setup layouts in Android and the best practices for storing resources in Android apps.");
+//	makeSectionDesc(content, "In this section you will learn about the differences between density-independent pixels compared to regular pixels, how to setup layouts in Android and the best practices for storing resources in Android apps.");
+	makeSectionDesc(content, middleDesc);
 	
 	// generate the necessary iframes
 	makeFrame(content, "DP vs PX | Values and Drawables", "https://docs.google.com/presentation/d/1c5RtkcozM6gjy9g_0kKetuL2kCcC2k01tS__qKfj9-k/embed?start=false&loop=false&delayms=3000");
@@ -98,7 +113,8 @@ function open_right() {
 	
 	// make the top portion
 	makeSectionTitle(content, "Quizzes!");
-	makeSectionDesc(content, "In this section you get to put what you learned to the test! Three quizzes are available which cover Android terminology, Android versions and the difference between density-independent pixels and plain old pixels.");
+//	makeSectionDesc(content, "In this section you get to put what you learned to the test! Three quizzes are available which cover Android terminology, Android versions and the difference between density-independent pixels and plain old pixels.");
+	makeSectionDesc(content, rightDesc);
 
 	// generate the necessary iframes
 	makeFrame(content, "Android Terminology Quiz", "https://docs.google.com/presentation/d/1r6pryQec1oSgy6tyiMeTEJaositzGNFlW_ThcKh2mqw/embed?start=false&loop=false&delayms=3000");
