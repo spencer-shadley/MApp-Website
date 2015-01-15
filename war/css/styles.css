@@ -4,3 +4,31 @@
     text-align: center;
     width: 85%;
 }
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.left {
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0%;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0%;
+}
+
+@media (max-width: 810px) {
+	table { display: none; }
+	#card_container { visibility: visible }
+}
+
+@media (min-width: 810px) {
+	table { visibility: visible }
+	#card_container { display: none; }
+}
