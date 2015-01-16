@@ -20,3 +20,21 @@ a:active {
 a {
 	color: white;
 }
+
+/* AM22 - To make google search box appear correct */
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button 
+{
+  box-sizing: content-box;
+  line-height: normal;
+}
+
+/* AM22 - To make google search results tabs appear correct */
+.gsc-tabsArea div 
+{
+  /*By default, Google custom search CSS sets it as AUTO, which shows scroll bars*/
+  overflow: visible; 
+}
+
+.nowrap {
+  white-space: nowrap;
+}

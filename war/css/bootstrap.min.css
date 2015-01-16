@@ -4724,7 +4724,7 @@ border-radius
 }
 
 .navbar-default {
-	background-color: #5787B0;
+	background-color: rgba(87, 135, 176, 0); /* hex equivalent: #5787B0; */
 	border-width: 0px;
 	border-radius: 0px;
 	margin: 0px;

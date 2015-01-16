@@ -1,0 +1,12 @@
+.about_box {
+	height: auto;
+	background-color: rgba(255,255,255,.6);
+}
+
+.about_title {
+	margin-top: 50px;
+}
+
+.about_description {
+	text-align: left;
+}

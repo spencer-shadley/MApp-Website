@@ -14,7 +14,7 @@ body {
 }
 
 .link-spanner {
-  position:absolute; 
+  position: absolute; 
   width: 100%;
   height: 100%;
   top: 0;
@@ -42,7 +42,7 @@ body {
 	/* Gray>Blue: 2b739c 0098f0 */
 	/* Inviting Blue>Yellow: 0098f0 f9e353 */
 	/* Inviting BLue>Green: 0098f0 0cc04e */
-	background-color: #0098f0;
+	background-color:#0098f0;
 	font-size: 25px;
 	line-height: 2;
 	padding: 2px 0px;
@@ -50,6 +50,8 @@ body {
 	margin-top: 0px;
 	position: relative;
 	transition: width 400ms, background-color 400ms ease;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .unit_card:hover {
