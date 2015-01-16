@@ -1,3 +1,15 @@
+/* important to combat bootstrap */
+body {
+	background: url("../res/iwall_blue.jpg") no-repeat center fixed !important; 
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	background-color: black !important;
+	min-height: 100% !important;
+	min-width: 100% !important;
+}
+
 .about_box {
 	height: auto;
 	background-color: rgba(255, 255, 255, .75);
